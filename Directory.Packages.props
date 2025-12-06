@@ -1,0 +1,10 @@
+<Project>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="Prism.DryIoc" Version="8.1.97" />
+	</ItemGroup>
+</Project>
+
+
