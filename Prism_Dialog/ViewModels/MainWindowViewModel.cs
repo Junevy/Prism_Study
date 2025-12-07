@@ -2,6 +2,8 @@
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Prism_Dialog.Models;
+using System;
+using System.Windows;
 
 namespace Prism_Dialog.ViewModels
 {
@@ -26,15 +28,21 @@ namespace Prism_Dialog.ViewModels
                 dialogParams.Add("Message", "Hello frome MainWindowViewModel");
                 dialogParams.Add(nameof(UserModel), new UserModel() { Id = 01, Name = "Junevy", Age = 25 });
 
-                dialogService.Show("UserView", dialogParams, null); // Main window can be operated while dialog is open.
+                dialogService.ShowDialog("UserView", dialogParams, ResultCallback); // Main window can be operated while dialog is open.
                 //dialogService.ShowDialog("UserView");   // Main window cannot be operated while dialog is open.
-
+                
             });
 
             OpenAdminDialogCommand = new DelegateCommand(() =>
             {
                 dialogService.Show("AdminView");
             });
+        }
+
+        private void ResultCallback(IDialogResult result)
+        {
+            string str = result.Parameters.GetValue<string>("Message");
+            MessageBox.Show(str);
         }
     }
 }

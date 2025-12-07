@@ -32,6 +32,12 @@ namespace Prism_Dialog.ViewModels
                 User.Name = "Junevy and Zing";
                 User.Age = 18;
                 User.Id += 1;
+
+                var dialogResult = new DialogResult();
+                dialogResult.Parameters.Add(nameof(Message), "All request processed!");
+
+                //Transmit data back to MainWindowViewModel
+                RequestClose?.Invoke(dialogResult);
             });
         }
 
@@ -39,7 +45,16 @@ namespace Prism_Dialog.ViewModels
 
         public void OnDialogClosed()
         {
-            MessageBox.Show("User Dialog Closed");
+            ///
+            /// Summary:
+            ///     The method will be DialogResult out of life cycle.
+            ///
+            //var dialogParams = new DialogParameters
+            //{
+            //    { nameof(Message), "All request processed!" }
+            //};
+
+            //RequestClose?.Invoke(new DialogResult(ButtonResult.OK, dialogParams));
         }
 
         public void OnDialogOpened(IDialogParameters parameters)
