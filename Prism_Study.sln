@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Command", "Prism_Command\Prism_Command.csproj", "{A30D7BA4-9670-47AD-A87A-6DD2A658EEFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Dialog", "Prism_Dialog\Prism_Dialog.csproj", "{52BE8B0B-2BA5-4A02-9A25-9293329AD492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{A30D7BA4-9670-47AD-A87A-6DD2A658EEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30D7BA4-9670-47AD-A87A-6DD2A658EEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30D7BA4-9670-47AD-A87A-6DD2A658EEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
