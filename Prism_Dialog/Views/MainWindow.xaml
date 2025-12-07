@@ -5,6 +5,7 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525" >
     <StackPanel>
-        <Button Height="30" Width="100" Content="Open Dialog" Command="{Binding OpenDialogCommand}"/>
+        <Button Height="30" Width="120" Content="Open Dialog" Command="{Binding OpenDialogCommand}"/>
+        <Button Height="30" Width="120" Content="Open Admin Dialog" Command="{Binding OpenAdminDialogCommand}" Margin="0, 10"/>
     </StackPanel>
 </Window>

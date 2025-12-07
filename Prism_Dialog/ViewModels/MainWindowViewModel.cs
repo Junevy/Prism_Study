@@ -14,14 +14,20 @@ namespace Prism_Dialog.ViewModels
         }
 
         public DelegateCommand OpenDialogCommand { get; set; }
+        public DelegateCommand OpenAdminDialogCommand { get; set; }
 
         public MainWindowViewModel(IDialogService dialogService)
         {
             //Open dialog
             OpenDialogCommand = new DelegateCommand(() =>
             {
-                //dialogService.Show("UserView"); // Main window can be operated while dialog is open.
-                dialogService.ShowDialog("UserView");   // Main window cannot be operated while dialog is open.
+                dialogService.Show("UserView"); // Main window can be operated while dialog is open.
+                //dialogService.ShowDialog("UserView");   // Main window cannot be operated while dialog is open.
+            });
+
+            OpenAdminDialogCommand = new DelegateCommand(() =>
+            {
+                dialogService.Show("AdminView");
             });
         }
     }

@@ -17,6 +17,9 @@ namespace Prism_Dialog
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterDialog<UserView>();
+            containerRegistry.RegisterDialog<AdminView>();
+
+            containerRegistry.RegisterDialogWindow<DefaultView>();  // Register default dialog window(style).
         }
     }
 }
