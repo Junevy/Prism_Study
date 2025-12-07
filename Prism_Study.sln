@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Primary", "Prism_Primary\Prism_Primary.csproj", "{C67BB48D-98B0-4330-8A7B-FF990B0E60BF}"
 EndProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Command", "Prism_Command\Prism_Command.csproj", "{A30D7BA4-9670-47AD-A87A-6DD2A658EEFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Dialog", "Prism_Dialog\Prism_Dialog.csproj", "{52BE8B0B-2BA5-4A02-9A25-9293329AD492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_EventAggregator", "Prism_EventAggregator\Prism_EventAggregator.csproj", "{D2D1D425-1030-4E08-B5B8-401492B9D0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52BE8B0B-2BA5-4A02-9A25-9293329AD492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D1D425-1030-4E08-B5B8-401492B9D0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D1D425-1030-4E08-B5B8-401492B9D0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D1D425-1030-4E08-B5B8-401492B9D0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D1D425-1030-4E08-B5B8-401492B9D0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

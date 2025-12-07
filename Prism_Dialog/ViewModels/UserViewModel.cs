@@ -3,7 +3,6 @@ using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Prism_Dialog.Models;
 using System;
-using System.Windows;
 
 namespace Prism_Dialog.ViewModels
 {
@@ -49,10 +48,9 @@ namespace Prism_Dialog.ViewModels
             /// Summary:
             ///     The method will be DialogResult out of life cycle.
             ///
-            //var dialogParams = new DialogParameters
-            //{
-            //    { nameof(Message), "All request processed!" }
-            //};
+            //var dialogResult = new DialogResult();
+            //dialogResult.Parameters.Add(nameof(Message), "All request processed!");
+            //RequestClose?.Invoke(dialogResult);
 
             //RequestClose?.Invoke(new DialogResult(ButtonResult.OK, dialogParams));
         }

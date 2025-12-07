@@ -30,7 +30,6 @@ namespace Prism_Dialog.ViewModels
 
                 dialogService.ShowDialog("UserView", dialogParams, ResultCallback); // Main window can be operated while dialog is open.
                 //dialogService.ShowDialog("UserView");   // Main window cannot be operated while dialog is open.
-                
             });
 
             OpenAdminDialogCommand = new DelegateCommand(() =>
