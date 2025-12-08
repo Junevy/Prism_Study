@@ -24,6 +24,14 @@ namespace Prism_EventAggregator.ViewModels
                 {
                     MessageBox.Show("User Received a Message");
                 });
+
+
+                aggregator.GetEvent<ValidateEventArgs>().Subscribe((r) => {
+                    MessageBox.Show($"The user validation result is {r}");
+                },
+                    ThreadOption.PublisherThread,
+                    false,
+                    (r) => { return r; });
             });
         }
 
