@@ -13,6 +13,7 @@ namespace Prism_EventAggregator.ViewModels
 
         public event Action<IDialogResult> RequestClose;
         public DelegateCommand SubscribeCommand { get; set; }
+        public DelegateCommand SubValidateCommand { get; set; }
 
         public AdminViewModel(IEventAggregator aggregator)
         {
@@ -21,6 +22,14 @@ namespace Prism_EventAggregator.ViewModels
                 aggregator.GetEvent<MsgEventArgs>().Subscribe(() =>
                 {
                     MessageBox.Show("Admin Received a Message");
+                });
+            });
+
+            SubValidateCommand = new DelegateCommand(() =>
+            {
+                aggregator.GetEvent<ValidateEventArgs>().Subscribe((r) =>
+                {
+                    MessageBox.Show($"The validation result is {r}");
                 });
             });
         }

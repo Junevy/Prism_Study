@@ -9,6 +9,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
         <Button Width="120" Height="30" Content="Subscibe Msg" Command="{Binding SubscribeCommand}"/>
+        <Button Width="120" Height="30" Content="Subscibe Msg" Command="{Binding SubValidateCommand}"/>
 
     </StackPanel>
 </UserControl>

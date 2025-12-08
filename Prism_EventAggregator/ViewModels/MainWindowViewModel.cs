@@ -34,6 +34,7 @@ namespace Prism_EventAggregator.ViewModels
             PublishCommand = new DelegateCommand(() =>
             {
                 aggregator.GetEvent<MsgEventArgs>().Publish();
+                aggregator.GetEvent<ValidateEventArgs>().Publish(true);
             });
         }
     }
