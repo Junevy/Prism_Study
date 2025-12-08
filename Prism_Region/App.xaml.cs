@@ -26,6 +26,8 @@ namespace Prism_Region
         {
             base.ConfigureRegionAdapterMappings(regionAdapterMappings);
 
+            // 注册区域与适配器（容器）的映射关系。例如当某个区域为 StackPanel时，使用StackPanelAdapter进行适配。
+            // 这样指定某个布局控件为区域时，Prism才能将视图正确添加到布局控件中。
             regionAdapterMappings.RegisterMapping(typeof(StackPanel), Container.Resolve<StackPanelAdapter>());
         }
     }
