@@ -22,6 +22,7 @@ namespace Prism_Command.ViewModels
                 message = value;
                 RaisePropertyChanged();
                 ChangeMsgCommand.RaiseCanExecuteChanged();  //Notify the command that the CanExecute value have changed.
+                
             }
         }
         private void ChangeMsg()
@@ -54,10 +55,21 @@ namespace Prism_Command.ViewModels
             return false;
         }
 
+        public CompositeCommand GetDialogCommand { get; set; }
+
         public MainWindowViewModel()
         {
-            ChangeMsgCommand = new(ChangeMsg, CanChangeMsg);
-            SubmitUserIdCommand = new(SubmitUserId, IsUserIdValid);
+            //ChangeMsgCommand = new(ChangeMsg, CanChangeMsg);
+            //SubmitUserIdCommand = new(SubmitUserId, IsUserIdValid);
+
+            ChangeMsgCommand = new(ChangeMsg);
+            SubmitUserIdCommand = new(SubmitUserId);
+
+            // Composite Command. And it's can register other commands.
+            GetDialogCommand = new CompositeCommand();
+            GetDialogCommand.RegisterCommand(ChangeMsgCommand);
+            GetDialogCommand.RegisterCommand(SubmitUserIdCommand);
+            
         }
     }
 }

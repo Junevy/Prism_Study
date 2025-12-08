@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Region", "Prism_Regio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_Module", "Prism_Module\Prism_Module.csproj", "{5138D66A-8F79-4F90-998A-E908280FF8D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism_MVVM", "Prism_MVVM\Prism_MVVM.csproj", "{EBD0FC69-F105-4E4E-AF30-F5E115B22581}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{5138D66A-8F79-4F90-998A-E908280FF8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5138D66A-8F79-4F90-998A-E908280FF8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5138D66A-8F79-4F90-998A-E908280FF8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD0FC69-F105-4E4E-AF30-F5E115B22581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD0FC69-F105-4E4E-AF30-F5E115B22581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD0FC69-F105-4E4E-AF30-F5E115B22581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD0FC69-F105-4E4E-AF30-F5E115B22581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
