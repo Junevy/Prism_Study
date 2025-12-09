@@ -18,6 +18,7 @@ namespace Prism_Module.ViewModels
 
         public DelegateCommand NavigateACommand { get; set; }
         public DelegateCommand NavigateBCommand { get; set; }
+        public DelegateCommand NavigateCCommand { get; set; }
 
         public MainWindowViewModel(IRegionManager regionManager)
         {
@@ -25,6 +26,13 @@ namespace Prism_Module.ViewModels
 
             NavigateACommand = new DelegateCommand(NavigateA);
             NavigateBCommand = new DelegateCommand(NavigateB);
+            NavigateCCommand = new DelegateCommand(NavigateC);
+        }
+
+        private void NavigateC()
+        {
+            // 切记，导航时，View类型不能为Window。
+            _regionManager.Regions["ContentRegion"].RequestNavigate("Module_CView");
         }
 
         private void NavigateB()

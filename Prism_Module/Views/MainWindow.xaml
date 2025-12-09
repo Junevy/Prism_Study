@@ -13,6 +13,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="0">
             <Button Content="Load A" Command="{Binding NavigateACommand}" Height="30" Width="100"/>
             <Button Content="Load B" Command="{Binding NavigateBCommand}" Height="30" Width="100"/>
+            <Button Content="Load C" Command="{Binding NavigateCCommand}" Height="30" Width="100"/>
         </StackPanel>
         
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="ContentRegion" />

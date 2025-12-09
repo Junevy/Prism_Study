@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<LangVersion>13.0</LangVersion>
+		<AssemblyName>Prism_Module_C</AssemblyName>
+		
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Prism.DryIoc" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy &quot;$(TargetDir)$(TargetName)*$(TargetExt)&quot; &quot;$(SolutionDir)\Prism_Module\bin\Debug\net48\Modules\&quot; /Y /S" />
+	</Target>
+
+</Project>
