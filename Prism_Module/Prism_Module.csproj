@@ -6,6 +6,10 @@
 	  <UseWPF>true</UseWPF>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.DryIoc"  />
+    <PackageReference Include="Prism.DryIoc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prism_Module_A\Prism_Module_A.csproj" />
+    <ProjectReference Include="..\Prism_Module_B\Prism_Module_B.csproj" />
   </ItemGroup>
 </Project>
